@@ -1,0 +1,50 @@
+%input:focus {
+    outline:0;
+}
+
+.input-sm {
+    padding:5px 8px;
+}
+
+.input-md {
+    padding:10px 14px;
+}
+
+.input-lg {
+    padding:15px 20px;
+}
+
+.brown-bordered-btn, .white-btn, .black-btn, .text-input {
+    @extend %input;
+}
+
+.text-input {
+    background-color: map-get($colors, "light-grey");
+    border: 1px solid #d0d0d0;
+    padding: 8px 15px;
+    font-size: 20px;
+}
+
+.black-btn {
+    background-color: black;
+    color: map-get($colors, "light-brown");
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    transition: all 0.5s ease;
+}
+
+.black-btn:hover {
+    background-color:map-get($colors, "light-brown");
+    color:black;
+}
+
+.brown-bordered-btn {
+    border:2px solid map-get($colors, "light-brown");
+    background-color: transparent;
+    text-transform:uppercase;
+}
+
+.brown-bordered-btn:hover {
+    background-color: map-get($colors, "light-brown");
+    color:white;
+}
